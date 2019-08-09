@@ -1,0 +1,28 @@
+h1.guest{
+color: red;
+
+text-transform:uppercase;
+background-color: yellow;
+
+}
+
+h1.premium{
+color: yellow;
+
+text-transform:lowercase;
+background-color: green;
+
+}
+
+body{
+background: url('face.jpg') center;
+}
+
+table{
+ border: 1px solid black;
+ background-color:blue;
+ width:50%;
+ height:50%;
+ vertical-align:bottom;
+ padding:5px;
+}

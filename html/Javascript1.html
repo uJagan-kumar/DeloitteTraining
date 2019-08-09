@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var usern= document.getElementById("LoginId").value;
+var passw= document.getElementById("Password").value;
+if (usern.length==0||passw.length==0)
+{
+	alert("PLease enter username and password to proceed");
+
+}
+else
+{
+	
+	alert("welcome :"+usern);
+	}
+}
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr><td>Login Id: </td><td><input type="text" id="LoginId" name="LoginId"></td></tr>
+<tr><td>Password: </td><td><input type="text" id="Password" name="Password<"></td></tr>
+<tr><td><input type="submit"</td><td><input type="reset"</td></tr>
+</table>
+</form>
+<input type="button" value="Go" onClick="validate()">
+</body>
+</html>

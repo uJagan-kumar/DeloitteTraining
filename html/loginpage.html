@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var usern= document.getElementById("Username").value;
+var passw= document.getElementById("Password").value;
+var errPassword= document.getElementById("errpassword");
+var errUsername= document.getElementById("errusername");
+if (usern.length==0)
+{
+	errUsername.innerHTML="<font color=blue>Please enter the username to proceed</font>";
+	errPassword.innerHTML="";
+
+}
+else if(passw.length==0)
+{
+errPassword.innerHTML="<font color=blue>Please enter the password to proceed</font>";
+errUsername.innerHTML="";
+}
+else if(passw.length<7)
+{
+errPassword.innerHTML="<font color=blue>Your password should be atleast 7 characters</font>";
+errUsername.innerHTML="";
+}
+else
+{
+errPassword.innerHTML="<font color=blue>Password Successful</font>";
+errUsername.innerHTML="";
+}
+}
+
+</script>
+</head>
+<body>
+<form>
+<table cellspacing="10" cellpadding="10" align="center">
+<tr><td>Username: </td><td><input type="text" id="Username" name="Username"></td><td><span id="errusername"></span></td></tr>
+<tr><td>Password: </td><td><input type="password" id="Password" name="Password"></td><td><span id="errpassword"></span></td>
+</tr>
+<tr><td><input type="submit"</td><td><input type="reset"</td></tr>
+</table>
+</form>
+<input type="button" value="Go" onClick="validate()">
+</body>
+</html>

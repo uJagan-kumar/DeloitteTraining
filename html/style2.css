@@ -1,0 +1,11 @@
+h2{color:red}
+div.h2 {color:green;}
+h2#mydiv {color:yellow;}
+
+span{
+	color:blue;
+}
+
+.true span{
+color:inherit;}
+
