@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MyFirstWebProject</display-name>
+  <welcome-file-list>
+    <welcome-file>Primary.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>Welcome</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>com.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CustomerFormServlet</display-name>
+    <servlet-name>CustomerFormServlet</servlet-name>
+    <servlet-class>com.CustomerFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerFormServlet</servlet-name>
+    <url-pattern>/CustomerFormServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ValidServlet</display-name>
+    <servlet-name>ValidServlet</servlet-name>
+    <servlet-class>com.ValidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidServlet</servlet-name>
+    <url-pattern>/ValidServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InvalidServlet</display-name>
+    <servlet-name>InvalidServlet</servlet-name>
+    <servlet-class>com.InvalidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InvalidServlet</servlet-name>
+    <url-pattern>/InvalidServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ProductServlet</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>minip.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>BillAmountServlet</display-name>
+    <servlet-name>BillAmountServlet</servlet-name>
+    <servlet-class>minip.BillAmountServlet</servlet-class>
+    
+    <init-param>
+  <param-name>company</param-name>
+  <param-value>deloitte</param-value>
+  </init-param>
+  
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>BillAmountServlet</servlet-name>
+    <url-pattern>/BillAmountServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SummaryServlet</display-name>
+    <servlet-name>SummaryServlet</servlet-name>
+    <servlet-class>minip.SummaryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SummaryServlet</servlet-name>
+    <url-pattern>/SummaryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <context-param><param-name>company</param-name>
+  <param-value>deloitte</param-value>
+ </context-param>
+</web-app>
